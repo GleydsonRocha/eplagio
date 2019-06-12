@@ -1,0 +1,9 @@
+javascript:(function() 
+{ 
+  _my_script=document.createElement('SCRIPT'); 
+  _my_script.type='text/javascript'; 
+  _my_script.src='https://portal.metropolitana.edu.br/Academico/Integracao/AntiPlagio/bookmarklet.js'; //colocar o dominio para ser executado//
+  document.getElementsByTagName('head')[0].appendChild(_my_script); 
+
+  setTimeout(function(){ Textar(document.getElementsByClassName("no-overflow")[1].innerText) }, 500); 
+})();
